@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8453F4AE-1526-4188-9764-48680560F2C4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BO</RootNamespace>
+    <AssemblyName>BO</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AuditCheckListDtlsBO.cs" />
+    <Compile Include="AuditCheckListDtlsBO_Post.cs" />
+    <Compile Include="AuditCheckListMastBO.cs" />
+    <Compile Include="AuditChecklistOthsBO.cs" />
+    <Compile Include="AuditClosureOrderBO.cs" />
+    <Compile Include="AuditReportUploadBO.cs" />
+    <Compile Include="AuditStatusBO.cs" />
+    <Compile Include="BO_Menu.cs" />
+    <Compile Include="CombinedRiskBO.cs" />
+    <Compile Include="DocArchiveBO.cs" />
+    <Compile Include="FormAATeamBO.cs" />
+    <Compile Include="MenuBO.cs" />
+    <Compile Include="OfficeNoteBO.cs" />
+    <Compile Include="OtherDocBO.cs" />
+    <Compile Include="PauseResumeBO.cs" />
+    <Compile Include="PlanApplicationAuditBO.cs" />
+    <Compile Include="Post_QueryWise_BO.cs" />
+    <Compile Include="Post_RptCLRRectifiedQBO.cs" />
+    <Compile Include="RelieveAuditBO.cs" />
+    <Compile Include="RequirementBO.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Req_CollectionBO.cs" />
+    <Compile Include="RiskPerceptionDtlsBO.cs" />
+    <Compile Include="RiskPerceptionMastBO.cs" />
+    <Compile Include="RptAAStatusReportBO.cs" />
+    <Compile Include="RptAccessLogReportBO.cs" />
+    <Compile Include="RptAuditReportBO.cs" />
+    <Compile Include="RptAuditReportBOL.cs" />
+    <Compile Include="RptAuditReportBO_Post.cs" />
+    <Compile Include="RptAuditReportClosureBO.cs" />
+    <Compile Include="RptAuditReportDetailedBO.cs" />
+    <Compile Include="RptCheckListIOSpecificBO.cs" />
+    <Compile Include="RptCLPendingQueriesBO.cs" />
+    <Compile Include="RptCLRRectifiedQBO.cs" />
+    <Compile Include="RptCombinedRiskRatingBO.cs" />
+    <Compile Include="RptJottingSheetBO.cs" />
+    <Compile Include="RptRiskPerceptionBO.cs" />
+    <Compile Include="RptUserDetailsBO.cs" />
+    <Compile Include="SectionMastBO.cs" />
+    <Compile Include="UserMaintenanceBO.cs" />
+    <Compile Include="WingMastBO.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
